@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 10px;
+    background: url('bgimg.png') no-repeat center/cover;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  
+.boxi {
+   
+  width: 700px;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(9, 8, 8, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+

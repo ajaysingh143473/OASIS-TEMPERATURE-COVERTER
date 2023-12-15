@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="Temp.css">
+    <script src="Temp.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body class="">
+    <div class="boxi d-flex align-items-center justify-content-center">
+
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-ms-12 ">
+                    <h2 class="text-center text-light">Temperature Converter</h2><br><br>
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="col-md-6">
+                    <label for="degrees" class="form-label fs-4 text-info">Degrees</label>
+                    <input type="number" class="form-control fs-3" id="degrees">
+                </div>
+                <div class="col-md-6">
+                    <label for="type" class="form-label fs-4 text-info">Type</label>
+                    <select id="type" class="form-select fs-3" onchange="clearInputFields()">
+                        <option selected>Choose...</option>
+                        <option value="CK">Celsius(°C) - Kelvin(°K)</option>
+                        <option value="CF">Celsius(°C) - Fahrenheit(°F)</option>
+                        <option value="FK">Fahrenheit(°F) - Kelvin(°K)</option>
+                        <option value="FC">Fahrenheit(°F) - Celsius(°C)</option>
+                        <option value="KF">Kelvin(°K) - Fahrenheit(°F)</option>
+                        <option value="KC">Kelvin(°K) - Celsius(°C)</option>
+                        <!-- Add more options if needed -->
+                    </select>
+                </div>
+            </div>
+            <div class="row p-3">
+                <div class="col-md-8">
+                    <label for="solution" class="form-label fs-2 text-light">Result</label>
+                    <input type="text" id="solution" class="form-control fs-3" placeholder="Result" readonly>
+                </div>
+            </div>
+            <div class="row p2">
+                <div class="col-md-12 m-3">
+                    <button class="btn btn-outline-success w-100" onclick="convertTemperature()"><h2>Convert</h2></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
